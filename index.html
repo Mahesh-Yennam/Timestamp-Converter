@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFQ8M0VSFN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RFQ8M0VSFN');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unix Epoch Timestamp &amp; Date Converter — Gamility Tools</title>
+  <meta name="description" content="Free online Unix epoch timestamp converter: convert timestamps to UTC/Local date, human date to epoch, multi-timezone world clock, and code snippets. 100% private.">
+  <meta name="keywords" content="epoch converter, unix timestamp, timestamp to date, date to timestamp, utc converter, epoch time, iso 8601 converter, developer tools">
+  <meta name="theme-color" content="#090e1a">
+    <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Unix Epoch Timestamp &amp; Date Converter — Gamility Tools">
+  <meta property="og:description" content="Free online Unix epoch timestamp converter: convert timestamps to UTC/Local date, human date to epoch, multi-timezone world clock, and code snippets. 100% private.">
+  <meta property="og:image" content="preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Unix Epoch Timestamp &amp; Date Converter — Gamility Tools">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Unix Epoch Timestamp &amp; Date Converter — Gamility Tools">
+  <meta name="twitter:description" content="Free online Unix epoch timestamp converter: convert timestamps to UTC/Local date, human date to epoch, multi-timezone world clock, and code snippets. 100% private.">
+  <meta name="twitter:image" content="preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Return Ribbon -->
+  <header class="top-nav-ribbon" role="banner">
+    <div class="ribbon-container">
+      <div class="ribbon-left">
+        <a href="https://mahesh-yennam.github.io/Gamility/" class="ribbon-brand" title="Gamility Home">
+          <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+            <path d="M6 12h4m-2-2v4m7-3h.01m3 2h.01"></path>
+          </svg>
+          <span class="brand-name">Gamility</span>
+          <span class="brand-badge">Tools</span>
+        </a>
+      </div>
+      <div class="ribbon-right">
+        <a href="https://mahesh-yennam.github.io/Gamility/tools.html" class="ribbon-back-btn" title="Return to Utility Tools Hub">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Tools</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main App Shell -->
+  <main class="app-main" id="main-content">
+    <div class="app-container">
+
+      <!-- Tool Header -->
+      <header class="tool-hero">
+        <div class="hero-header-row">
+          <div class="hero-title-group">
+            <div class="tool-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Developer &amp; System Utility</span>
+            </div>
+            <h1 class="hero-title">Unix Epoch Timestamp &amp; Date Converter</h1>
+            <p class="hero-desc">Real-time Unix epoch clock, two-way UTC/Local date conversions, multi-timezone world clock, and language code snippets.</p>
+          </div>
+          <div class="privacy-pill" title="All timestamp transformations execute locally in client memory.">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>100% In-Browser &amp; Private</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Live Epoch Banner Card -->
+      <section class="live-epoch-card">
+        <div class="epoch-card-header">
+          <div class="epoch-live-indicator">
+            <span class="live-dot" id="clock-dot"></span>
+            <span class="live-label">Current Unix Epoch Time</span>
+          </div>
+          <button class="tool-btn" id="btn-toggle-clock" type="button">⏸ Pause Clock</button>
+        </div>
+
+        <div class="epoch-numbers-grid">
+          <!-- Seconds -->
+          <div class="epoch-box">
+            <div class="epoch-box-header">
+              <span class="epoch-unit-title">Seconds (10 digits)</span>
+              <button class="mini-copy-btn" id="btn-copy-live-sec" type="button">Copy</button>
+            </div>
+            <div class="epoch-val-display" id="live-epoch-sec">0</div>
+          </div>
+
+          <!-- Milliseconds -->
+          <div class="epoch-box">
+            <div class="epoch-box-header">
+              <span class="epoch-unit-title">Milliseconds (13 digits)</span>
+              <button class="mini-copy-btn" id="btn-copy-live-ms" type="button">Copy</button>
+            </div>
+            <div class="epoch-val-display" id="live-epoch-ms">0</div>
+          </div>
+        </div>
+
+        <div class="epoch-card-footer">
+          <div class="footer-time-stat">UTC: <strong id="live-utc-time">Loading...</strong></div>
+          <div class="footer-time-stat">Local: <strong id="live-local-time">Loading...</strong></div>
+        </div>
+      </section>
+
+      <!-- Main Two-Way Conversion Workspace -->
+      <section class="workspace-grid">
+
+        <!-- Column 1: Timestamp to Human Date Converter -->
+        <div class="converter-card">
+          <div class="card-header">
+            <h2 class="card-title">1. Timestamp &rarr; Human Date</h2>
+            <span class="card-badge">Epoch to Date</span>
+          </div>
+
+          <div class="card-body">
+            <!-- Input Row -->
+            <div class="input-action-row">
+              <div class="input-group flex-1">
+                <label for="input-ts">Epoch Timestamp (Seconds or Milliseconds)</label>
+                <input type="text" id="input-ts" class="text-input" placeholder="e.g. 1791892123" spellcheck="false">
+              </div>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="quick-ts-buttons">
+              <button class="quick-btn" id="btn-ts-now" type="button">Now</button>
+              <button class="quick-btn" id="btn-ts-plus-hour" type="button">+1 Hour</button>
+              <button class="quick-btn" id="btn-ts-plus-day" type="button">+1 Day</button>
+              <button class="quick-btn" id="btn-ts-minus-day" type="button">-1 Day</button>
+              <button class="quick-btn btn-danger-action" id="btn-ts-clear" type="button">Clear</button>
+            </div>
+
+            <!-- Results Output List -->
+            <div class="results-list" id="ts-to-date-results">
+              
+              <!-- Result: UTC String -->
+              <div class="result-row">
+                <div class="result-label-group">
+                  <span class="result-field-name">UTC / GMT</span>
+                  <span class="result-field-sub">Universal Time (RFC 7231)</span>
+                </div>
+                <div class="result-val-group">
+                  <code class="result-code-val" id="res-utc">-</code>
+                  <button class="mini-copy-btn copy-field-btn" data-target="res-utc" type="button">Copy</button>
+                </div>
+              </div>
+
+              <!-- Result: ISO 8601 -->
+              <div class="result-row">
+                <div class="result-label-group">
+                  <span class="result-field-name">ISO 8601</span>
+                  <span class="result-field-sub">Standard API Timestamp</span>
+                </div>
+                <div class="result-val-group">
+                  <code class="result-code-val text-cyan" id="res-iso">-</code>
+                  <button class="mini-copy-btn copy-field-btn" data-target="res-iso" type="button">Copy</button>
+                </div>
+              </div>
+
+              <!-- Result: Local Time -->
+              <div class="result-row">
+                <div class="result-label-group">
+                  <span class="result-field-name">Local Time</span>
+                  <span class="result-field-sub" id="res-local-tz-name">Your Browser Timezone</span>
+                </div>
+                <div class="result-val-group">
+                  <code class="result-code-val text-emerald" id="res-local">-</code>
+                  <button class="mini-copy-btn copy-field-btn" data-target="res-local" type="button">Copy</button>
+                </div>
+              </div>
+
+              <!-- Result: Relative Time -->
+              <div class="result-row">
+                <div class="result-label-group">
+                  <span class="result-field-name">Relative Time</span>
+                  <span class="result-field-sub">Humanized Offset</span>
+                </div>
+                <div class="result-val-group">
+                  <strong class="relative-time-text" id="res-relative">-</strong>
+                </div>
+              </div>
+
+              <!-- Calendar Metadata Grid -->
+              <div class="metadata-chips-grid">
+                <div class="meta-chip">Day: <strong id="meta-day">-</strong></div>
+                <div class="meta-chip">Day of Year: <strong id="meta-doy">-</strong></div>
+                <div class="meta-chip">Week: <strong id="meta-week">-</strong></div>
+                <div class="meta-chip">Leap Year: <strong id="meta-leap">-</strong></div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 2: Human Date to Timestamp Converter -->
+        <div class="converter-card">
+          <div class="card-header">
+            <h2 class="card-title">2. Human Date &rarr; Timestamp</h2>
+            <span class="card-badge">Date to Epoch</span>
+          </div>
+
+          <div class="card-body">
+            <!-- Date & Time Input Controls -->
+            <div class="date-inputs-grid">
+              <div class="input-group">
+                <label for="input-date">Date (YYYY-MM-DD)</label>
+                <input type="date" id="input-date" class="text-input">
+              </div>
+              <div class="input-group">
+                <label for="input-time">Time (HH:MM:SS)</label>
+                <input type="time" id="input-time" class="text-input" step="1">
+              </div>
+            </div>
+
+            <!-- Timezone Selector -->
+            <div class="input-group">
+              <label for="input-tz-select">Timezone Context</label>
+              <select id="input-tz-select" class="custom-select">
+                <option value="local">Local Browser Timezone</option>
+                <option value="UTC">UTC / GMT</option>
+                <option value="America/New_York">New York (EST/EDT)</option>
+                <option value="Europe/London">London (GMT/BST)</option>
+                <option value="Asia/Tokyo">Tokyo (JST)</option>
+                <option value="Asia/Kolkata">India (IST)</option>
+                <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+              </select>
+            </div>
+
+            <!-- Quick Set to Now -->
+            <div class="quick-ts-buttons">
+              <button class="quick-btn" id="btn-date-now" type="button">Set to Current Time</button>
+            </div>
+
+            <!-- Generated Epoch Outputs -->
+            <div class="results-list">
+              <!-- Seconds -->
+              <div class="result-row">
+                <div class="result-label-group">
+                  <span class="result-field-name">Epoch Seconds</span>
+                  <span class="result-field-sub">10 Digits</span>
+                </div>
+                <div class="result-val-group">
+                  <code class="result-code-val text-cyan" id="res-date-sec">-</code>
+                  <button class="mini-copy-btn copy-field-btn" data-target="res-date-sec" type="button">Copy</button>
+                </div>
+              </div>
+
+              <!-- Milliseconds -->
+              <div class="result-row">
+                <div class="result-label-group">
+                  <span class="result-field-name">Epoch Milliseconds</span>
+                  <span class="result-field-sub">13 Digits (JS Date.now())</span>
+                </div>
+                <div class="result-val-group">
+                  <code class="result-code-val text-emerald" id="res-date-ms">-</code>
+                  <button class="mini-copy-btn copy-field-btn" data-target="res-date-ms" type="button">Copy</button>
+                </div>
+              </div>
+
+              <!-- Hexadecimal -->
+              <div class="result-row">
+                <div class="result-label-group">
+                  <span class="result-field-name">Hexadecimal Timestamp</span>
+                  <span class="result-field-sub">Base 16 representation</span>
+                </div>
+                <div class="result-val-group">
+                  <code class="result-code-val text-violet" id="res-date-hex">-</code>
+                  <button class="mini-copy-btn copy-field-btn" data-target="res-date-hex" type="button">Copy</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Multi-Timezone World Clock Matrix -->
+      <section class="world-clock-section">
+        <div class="section-title-row">
+          <h2 class="section-title">🌍 Multi-Timezone World Clock Matrix</h2>
+          <span class="section-sub">Live synchronized local times across major international developer and financial hubs</span>
+        </div>
+
+        <div class="world-clock-grid">
+          
+          <div class="tz-card">
+            <div class="tz-header">
+              <span class="tz-city">UTC / GMT</span>
+              <span class="tz-offset">UTC+00:00</span>
+            </div>
+            <div class="tz-time" id="tz-utc-time">--:--:--</div>
+            <div class="tz-date" id="tz-utc-date">---, --- --, ----</div>
+          </div>
+
+          <div class="tz-card">
+            <div class="tz-header">
+              <span class="tz-city">New York</span>
+              <span class="tz-offset" id="tz-ny-offset">EDT</span>
+            </div>
+            <div class="tz-time" id="tz-ny-time">--:--:--</div>
+            <div class="tz-date" id="tz-ny-date">---, --- --, ----</div>
+          </div>
+
+          <div class="tz-card">
+            <div class="tz-header">
+              <span class="tz-city">London</span>
+              <span class="tz-offset" id="tz-london-offset">BST</span>
+            </div>
+            <div class="tz-time" id="tz-london-time">--:--:--</div>
+            <div class="tz-date" id="tz-london-date">---, --- --, ----</div>
+          </div>
+
+          <div class="tz-card">
+            <div class="tz-header">
+              <span class="tz-city">Mumbai</span>
+              <span class="tz-offset">IST (UTC+05:30)</span>
+            </div>
+            <div class="tz-time" id="tz-mumbai-time">--:--:--</div>
+            <div class="tz-date" id="tz-mumbai-date">---, --- --, ----</div>
+          </div>
+
+          <div class="tz-card">
+            <div class="tz-header">
+              <span class="tz-city">Tokyo</span>
+              <span class="tz-offset">JST (UTC+09:00)</span>
+            </div>
+            <div class="tz-time" id="tz-tokyo-time">--:--:--</div>
+            <div class="tz-date" id="tz-tokyo-date">---, --- --, ----</div>
+          </div>
+
+          <div class="tz-card">
+            <div class="tz-header">
+              <span class="tz-city">Sydney</span>
+              <span class="tz-offset" id="tz-sydney-offset">AEST</span>
+            </div>
+            <div class="tz-time" id="tz-sydney-time">--:--:--</div>
+            <div class="tz-date" id="tz-sydney-date">---, --- --, ----</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Programming Language Snippets Section -->
+      <section class="snippets-section">
+        <div class="section-title-row">
+          <h2 class="section-title">💻 Developer Programming Snippets</h2>
+          <span class="section-sub">Quick code snippets for fetching current Unix timestamps across common programming languages</span>
+        </div>
+
+        <div class="snippets-grid">
+          
+          <div class="snippet-card">
+            <div class="snippet-header">
+              <span class="snippet-lang">JavaScript / Node.js</span>
+              <button class="mini-copy-btn copy-snippet-btn" data-code="Math.floor(Date.now() / 1000)" type="button">Copy</button>
+            </div>
+            <pre><code>Math.floor(Date.now() / 1000)</code></pre>
+          </div>
+
+          <div class="snippet-card">
+            <div class="snippet-header">
+              <span class="snippet-lang">Python</span>
+              <button class="mini-copy-btn copy-snippet-btn" data-code="import time; int(time.time())" type="button">Copy</button>
+            </div>
+            <pre><code>import time; int(time.time())</code></pre>
+          </div>
+
+          <div class="snippet-card">
+            <div class="snippet-header">
+              <span class="snippet-lang">PHP</span>
+              <button class="mini-copy-btn copy-snippet-btn" data-code="time()" type="button">Copy</button>
+            </div>
+            <pre><code>time()</code></pre>
+          </div>
+
+          <div class="snippet-card">
+            <div class="snippet-header">
+              <span class="snippet-lang">Go</span>
+              <button class="mini-copy-btn copy-snippet-btn" data-code="time.Now().Unix()" type="button">Copy</button>
+            </div>
+            <pre><code>time.Now().Unix()</code></pre>
+          </div>
+
+          <div class="snippet-card">
+            <div class="snippet-header">
+              <span class="snippet-lang">Java / Kotlin</span>
+              <button class="mini-copy-btn copy-snippet-btn" data-code="System.currentTimeMillis() / 1000L" type="button">Copy</button>
+            </div>
+            <pre><code>System.currentTimeMillis() / 1000L</code></pre>
+          </div>
+
+          <div class="snippet-card">
+            <div class="snippet-header">
+              <span class="snippet-lang">SQL (MySQL / Postgres)</span>
+              <button class="mini-copy-btn copy-snippet-btn" data-code="SELECT UNIX_TIMESTAMP();" type="button">Copy</button>
+            </div>
+            <pre><code>SELECT UNIX_TIMESTAMP();</code></pre>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Platform Footer -->
+      <footer class="tool-footer">
+        <p class="footer-copy">Copyright &copy; 2026 Gamility. All rights reserved. &bull; 100% In-Browser Unix Epoch Engine</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "Unix Epoch Timestamp & Date Converter — Gamility Tools",
+  "short_name": "Epoch Tool",
+  "description": "Real-time Unix epoch timestamp clock, two-way UTC/Local date converter, and multi-timezone world clock.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090e1a",
+  "theme_color": "#090e1a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
